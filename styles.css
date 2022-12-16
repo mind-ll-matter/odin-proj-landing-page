@@ -21,14 +21,8 @@ button {
 
 
 .one {
-    /* background-color: rgb(47, 58, 107); */
     color: white;
     background-color: none;
-    background-image: url("Touhou.mp4");
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: contain;
-    background-attachment: fixed;
 }
 
 .back-video {
@@ -89,7 +83,7 @@ button {
     padding: 50px;
     margin: 70px;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     max-width: fit-content;
     border-radius: 15px;
 }
@@ -101,10 +95,16 @@ button {
 }
 
 .block-right {
-    background-image: url("pexels-aleksandar-pasaric-2339009.jpg");
+    background-image: url("img/pexels-aleksandar-pasaric-2339009.jpg");
     background-position:center;
     background-size:cover;
     opacity: 0.8;
+    border-radius: 7px;
+}
+
+.header-right div {
+    padding:8px 25px;
+    background-color: rgb(0, 0, 0, 0.4);
     border-radius: 7px;
 }
 
@@ -120,7 +120,7 @@ button {
 
 .block-left button{
     margin: 10px 0 20px;
-    background-color: rgb(0, 102, 255);
+    background-color: rgb(0, 122, 221);
     color: white;
     border: none;
 }
@@ -161,23 +161,23 @@ button {
 }
 
 .box1{
-    background-image: url("eddi-aguirre-o9iUbtfve1Q-unsplash.jpg");
+    background-image: url("img/eddi-aguirre-o9iUbtfve1Q-unsplash.jpg");
 }
 
 .box2{
-    background-image: url("dragon-7063555_1280.png");
+    background-image: url("img/dragon-7063555_1280.png");
 }
 
 .box3{
-    background-image: url("jezael-melgoza-7H77FWkK_x4-unsplash.jpg");
+    background-image: url("img/jezael-melgoza-7H77FWkK_x4-unsplash.jpg");
 }
 
 .box4{
-    background-image: url("dragon-7063556_1280.png");
+    background-image: url("img/girl-7628308_1920.jpg");
 }
 
 .box5{
-    background-image: url("pat-krupa-Of2rc0KOfVU-unsplash.jpg");
+    background-image: url("img/pat-krupa-Of2rc0KOfVU-unsplash.jpg");
 }
 
 
@@ -274,7 +274,7 @@ button {
 
 
 .three-n-four {
-    background-image: url("tim-mossholder-tq8Cuap8_wY-unsplash.jpg");
+    background-image: url("img/tim-mossholder-tq8Cuap8_wY-unsplash.jpg");
     background-position:center;
     background-size: cover;
     background-attachment: fixed;
