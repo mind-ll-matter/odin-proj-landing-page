@@ -5,13 +5,53 @@ body {
 }
 
 
+/*------------------------------Reusables-------------------------------*/
+
+button {
+    padding: 5px 22px;
+    color: white;
+    font-weight: bold;
+    border-radius:6px;
+}
+
+
+
 /*------------------------------SECTION 1-------------------------------*/
 
 
+
 .one {
-    background-color: rgb(47, 58, 107);
+    /* background-color: rgb(47, 58, 107); */
     color: white;
+    background-color: none;
+    background-image: url("Touhou.mp4");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: contain;
+    background-attachment: fixed;
 }
+
+.back-video {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height:100%;
+    }
+}
+
 
 .header {
     display: flex;
@@ -25,19 +65,33 @@ body {
     flex: 0 0 auto;
     width: 72px;
     height: 72px;
+    padding-top: 35px;
+
 }
 
 .header-right {
     display: flex;
-    gap: 24px;
+    gap: 50px;
+    font-weight: bold;
+}
+
+.below-header {
+    padding-bottom:150px;
+    padding-top:70px;
+    display: flex;
+    justify-content: center;
 }
 
 .one-content-one {
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 70px;
+    padding: 50px;
+    margin: 70px;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: fit-content;
+    border-radius: 15px;
 }
 
 .block-left, .block-right {
@@ -47,10 +101,11 @@ body {
 }
 
 .block-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(150, 150, 150);
+    background-image: url("pexels-aleksandar-pasaric-2339009.jpg");
+    background-position:center;
+    background-size:cover;
+    opacity: 0.8;
+    border-radius: 7px;
 }
 
 .block-left h1 {
@@ -65,13 +120,10 @@ body {
 
 .block-left button{
     margin: 10px 0 20px;
-    padding: 5px 15px;
     background-color: rgb(0, 102, 255);
     color: white;
     border: none;
-    border-radius:5px;
 }
-
 
 
 /*------------------------------SECTION 2-------------------------------*/
@@ -83,11 +135,13 @@ body {
     align-items: center;
     padding-top: 35px;
     padding-bottom: 75px;
+    background-color: black;
+    color: white;
 }
 
 .cards {
     display: flex;
-    max-width: 675px;
+    max-width: 850px;
     gap: 35px;
     flex-wrap: wrap;
     justify-content: center;
@@ -98,10 +152,149 @@ body {
 }
 
 .box {
-    border: 2px solid lightblue;
+    border: 3px solid rgb(116, 116, 116);
     height: 125px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-position:center;
+    background-size:cover;
 }
+
+.box1{
+    background-image: url("eddi-aguirre-o9iUbtfve1Q-unsplash.jpg");
+}
+
+.box2{
+    background-image: url("dragon-7063555_1280.png");
+}
+
+.box3{
+    background-image: url("jezael-melgoza-7H77FWkK_x4-unsplash.jpg");
+}
+
+.box4{
+    background-image: url("dragon-7063556_1280.png");
+}
+
+.box5{
+    background-image: url("pat-krupa-Of2rc0KOfVU-unsplash.jpg");
+}
+
+
+
 
 .card p {
     text-align: center;
+}
+
+
+
+/*------------------------------SECTION 3-------------------------------*/
+
+
+.three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    /* background-color: lightgray; */
+    color: white;
+}
+
+.three-content {
+    max-width: 700px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+}
+
+.three-content em {
+    font-size: 35px;
+    font-weight:400;
+    display: block;
+}
+
+.three-content strong {
+    align-self: flex-end;
+    margin-right: 70px;
+    font-size: large;
+    margin-top: 30px;
+}
+
+
+
+/*------------------------------SECTION 4-------------------------------*/
+
+
+
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.four-content {
+    background-color: rgb(238, 143, 0, 0.8);
+}
+
+.four-content {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    padding: 35px 90px;
+    border-radius: 5px;
+    width: 670px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+
+}
+
+.four-content h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.four-content button {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 10px;
+    border: 1.9px solid white;
+    background: none
+}
+
+
+
+
+.three-n-four {
+    background-image: url("tim-mossholder-tq8Cuap8_wY-unsplash.jpg");
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------FOOTER-------------------------------*/
+
+
+
+.footer {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer p {
+    color: white;
+    font-size: small;
 }
