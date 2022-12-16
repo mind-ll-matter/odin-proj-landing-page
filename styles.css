@@ -15,7 +15,6 @@ button {
 }
 
 
-
 /*------------------------------SECTION 1-------------------------------*/
 
 
@@ -83,7 +82,7 @@ button {
     padding: 50px;
     margin: 70px;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     max-width: fit-content;
     border-radius: 15px;
 }
@@ -102,27 +101,57 @@ button {
     border-radius: 7px;
 }
 
-.header-right div {
+.header-right a {
     padding:8px 25px;
     background-color: rgb(0, 0, 0, 0.4);
     border-radius: 7px;
 }
 
+.header-right a:hover{
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ff0000,
+    0 0 82px #ff0000,
+    0 0 92px #ff0000,
+    0 0 102px #ff0000,
+    0 0 151px #ff0000;
+}
+
 .block-left h1 {
     margin-top: -5px;
     padding: 0;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0026ff,
+        0 0 82px #0026ff,
+        0 0 92px #0026ff,
+        0 0 102px #0026ff,
+        0 0 151px #0026ff;
 }
+
 
 .block-left p{
     margin: 0;
     padding: 0;
 }
 
-.block-left button{
+.block-left a button{
     margin: 10px 0 20px;
-    background-color: rgb(0, 122, 221);
-    color: white;
-    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color:white;
+}
+
+.block-left a button:hover{
+    background-color: rgb(0, 140, 255);
+    color: black;
+    border: 2px solid transparent;
 }
 
 
@@ -135,7 +164,7 @@ button {
     align-items: center;
     padding-top: 35px;
     padding-bottom: 75px;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     color: white;
 }
 
@@ -149,6 +178,7 @@ button {
 
 .card {
     width:142px;
+
 }
 
 .box {
@@ -181,10 +211,17 @@ button {
 }
 
 
-
-
 .card p {
     text-align: center;
+}
+
+.cards a {
+    text-decoration: none;
+    color: white;
+}
+
+.cards a:hover {
+    color:aqua;
 }
 
 
@@ -262,12 +299,23 @@ button {
     padding: 0;
 }
 
+.four-content a {
+    text-decoration: none;
+}
+
 .four-content button {
     display: flex;
     align-self: flex-end;
     margin-top: 10px;
     border: 1.9px solid white;
-    background: none
+    background: none;
+    color: white;
+}
+
+.four-content button:hover {
+    background-color: #fff;
+    color: black;
+    border-color: transparent;
 }
 
 
